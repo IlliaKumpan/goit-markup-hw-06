@@ -1,6 +1,6 @@
-#goit-markup-hw-05
+#goit-markup-hw-06
 
-FSon-124 Homework-5 by Illia Kumpan
+FSon-124 Homework-6 by Illia Kumpan
 
     --iris: #4d5ae5;
     --ocean: #404bbf;
@@ -28,5 +28,5 @@ font-weight: 400;
 font-style: normal;
 
 git add .
-git commit -m hw-05-backdrop-6
+git commit -m hw-06
 git push -u origin main
