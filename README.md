@@ -1,7 +1,20 @@
 #goit-markup-hw-06
 
-320px - mobile 
-768px - tablet 
+!TO-DO!
+
+1++. Modal - на tablet і destop позиціювання по центру viewport
+2++. Menu - блоки address і кнопок мають бути притиснуті до низу
+3++. Menu має зникнути при першому переломі на 768px
+4++. У блок header перенести відступи padding-top padding-bottom, а бокові відступи - у контейнер
+5++. Заголовки у Advantages на tablet - не повинні бути по центру
+6++. На кнопках nav відступи мають бути на самих кнопках, щоб збільшити клікабельну область
+7. Зображення в title має бути обмежене по ширині, згідно макету
+8++. У іконках advantages прибрати padding (щоб не сплюскувати), ми і так центруємо Flex'ами
+
+!TO-DO!
+
+320px - mobile
+768px - tablet
 1158px - desktop
 
 FSon-124 Homework-6 by Illia Kumpan

@@ -35,7 +35,7 @@
                 </ul>
             </address>
           
-            <button type="button" class="menu-button"><svg class="menu-button-icon" width="24" height="24"><use href="./images/icons.svg#burger-menu"></use></svg></button>
+            <button type="button" class="menu-button" data-menu-open><svg class="menu-button-icon" width="24" height="24"><use href="./images/icons.svg#burger-menu"></use></svg></button>
             
        
         </div>
@@ -46,7 +46,7 @@
             <section class="title">
                 <div class="container title-container">
                     <h1 class="title-name">Effective Solutions for Your Business</h1>
-                    <button type="button" class="title-button">Order Service</button>
+                    <button type="button" class="title-button" data-modal-open>Order Service</button>
                 </div>
             </section>
 
@@ -272,9 +272,9 @@
         </div>
     </footer> 
 
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
         <div class="modal">
-            <button type="button" class="btn-close" name="btn-close"><svg class="btn-close-icon" width="8" height="8"><use href="./images/icons.svg#close"></use></svg></button>
+            <button type="button" class="btn-close" name="btn-close" data-modal-close><svg class="btn-close-icon" width="8" height="8"><use href="./images/icons.svg#close"></use></svg></button>
             <p class="modal-form-title">Leave your contacts and we will call you back</p>
             <form class="modal-form">
                 <div class="model-form-field">  
@@ -319,9 +319,9 @@
         </div>
     </div>
     
-    <div class="menu">
+    <div class="menu" data-menu>
         <div class="menu-modal">
-            <button type="button" class="menu-close" name="menu-close"><svg class="menu-close-icon" width="8" height="8"><use href="./images/icons.svg#close"></use></svg></button>
+            <button type="button" class="menu-close" name="menu-close" data-menu-close><svg class="menu-close-icon" width="8" height="8"><use href="./images/icons.svg#close"></use></svg></button>
 
                 <ul class="menu-navigation">
                     <li class="menu-navigation-item"><a href="./index.html" class="menu-navigation-link navigation-current">Studio</a></li>
@@ -329,8 +329,8 @@
                     <li class="menu-navigation-item"><a href="" class="menu-navigation-link">Contacts</a></li>
                 </ul>
                 <ul class="menu-contacts">
-                    <li class="menu-contacts-item"><a href="mailto:info@devstudio.com" class="menu-contacts-link contacts-current">info@devstudio.com</a></li>
-                    <li class="menu-contacts-item"><a href="tel:+110001111111" class="menu-contacts-link">+11 (000) 111-11-11</a></li>
+                    <li class="menu-contacts-item"><a href="tel:+110001111111" class="menu-contacts-link contacts-current">+11 (000) 111-11-11</a></li>
+                    <li class="menu-contacts-item"><a href="mailto:info@devstudio.com" class="menu-contacts-link">info@devstudio.com</a></li>
                 </ul>
                 <ul class="team-links menu-links">
                     <li class="team-links-item"><a href="" class="team-link"><svg class="team-icon" width="16" height="16"><use href="./images/icons.svg#instagram"></use></svg></a></li>
@@ -341,5 +341,8 @@
 
         </div>
     </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

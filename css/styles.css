@@ -53,16 +53,14 @@ h1, h2, h3, h4, h5, h6, p {
 .header{
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    
 }
 .header-container {
     display: flex;
-    
     align-items: center;
     justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 16px;
 }
-.logo {
+.logo { 
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -71,9 +69,11 @@ h1, h2, h3, h4, h5, h6, p {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 16px 0;
 }
 .logo-title {
     color: #2e2f42;
@@ -95,17 +95,18 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media only screen and (min-width: 768px){
     .header-container {
-        padding-top: 0;
-        padding-bottom: 0;
+        max-width: 768px;
     }
    .menu-button {
     display: none;
    }
    .nav {
     display: flex;
+    align-items: center;
+    justify-content: center;
    }
    .logo {
-    padding: 0;
+    padding: 24px 0;
     margin-right: 120px;
    }
    .navigation {
@@ -116,9 +117,8 @@ h1, h2, h3, h4, h5, h6, p {
        color: #434455;
        display: flex;
        align-items: center;
+       justify-content: center;
        gap: 40px;
-
-       padding-top: 24px;
    }
    .navigation-button {
        color: #404bbf;
@@ -127,7 +127,8 @@ h1, h2, h3, h4, h5, h6, p {
        color: #2e2f42;
        text-decoration: none;
        display: block;
-       padding-bottom: 20px; 
+       padding-top: 20px;
+       padding-bottom: 24px;
        transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms color;
    }
    .navigation-button-link:hover,
@@ -151,27 +152,24 @@ h1, h2, h3, h4, h5, h6, p {
    }
    .address {
        font-style: normal;
-       /*margin-left: auto;*/
        display: block;
    }
    .contacts {
-       font-style: normal;
-       font-weight: 400;
-       font-size: 12px;
-       line-height: 1.6;
-       letter-spacing: 0.04em;
        display: flex;
        flex-direction: column;
-       align-items: center;
        gap: 12px;
    }
 
-   .contacts-button {}
 
    .contacts-button-link {
+       display: block;
+       font-style: normal;
+       font-weight: 400;
+       font-size: 12px;
+       line-height: 1.17;
+       letter-spacing: 0.04em;
        color: #434455;
        text-decoration: none;
-       display: block;
        transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms color;
    }
 
@@ -183,15 +181,25 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 @media only screen and (min-width: 1158px){
+    .header-container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+    
     .logo{
         margin-right: 76px;
     }
     .contacts {
-       font-size: 16px;
-       line-height: 1.5;
-       letter-spacing: 0.02em;
+       align-items: centers;
        flex-direction: row;
        gap: 40px;
+   }
+
+   .contacts-button-link{
+        padding: 24px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
    }
 }
 /* #endregion */
@@ -254,9 +262,9 @@ h1, h2, h3, h4, h5, h6, p {
 @media only screen and (min-width: 768px){
     .title {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/section-hero/t-people-office.jpg);
-        max-width: 100%;
         padding-top: 112px;
         padding-bottom: 112px;
+        max-width: 1158px;
     }
     .title-name {
         font-size: 56px;
@@ -274,7 +282,7 @@ h1, h2, h3, h4, h5, h6, p {
 @media only screen and (min-width: 1158px){
     .title {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/section-hero/d-people-office.jpg);
-        max-width: 100%;
+        max-width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
     }
@@ -350,6 +358,9 @@ h1, h2, h3, h4, h5, h6, p {
     .advantages-list-item {
         width: calc((100% - 24px) / 2);
     }
+    .advantages-list-title {
+        text-align: start;
+    }
 
 }
 
@@ -359,10 +370,9 @@ h1, h2, h3, h4, h5, h6, p {
         padding-bottom: 120px;
     }
     .advantages-list-icon {
-    display: flex;
+        display: flex;
     }
     .advantages-list-icon {
-        padding: 24px 0px 24px 0px;
         margin-bottom: 8px;
         background-color: #f4f4fd;
         border: 1px solid #8e8f99;;
@@ -376,7 +386,6 @@ h1, h2, h3, h4, h5, h6, p {
         width: calc((100% - 24px * 3) / 4);
     }
     .advantages-list-title {
-        text-align: start;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -1003,7 +1012,6 @@ h1, h2, h3, h4, h5, h6, p {
     fill: #FFFFFF;
 }
 
-
 .modal-form-btn{
  letter-spacing: 0.04em
 }
@@ -1066,7 +1074,6 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
 @media only screen and (min-width: 768px) {
 
     .modal {
-        top: 35%;
         min-width: 408px;
         height: 584px;
     }
@@ -1076,9 +1083,6 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
 }
 
 @media only screen and (min-width: 1158px) {
-    .modal {
-        top: 34%;
-    }
 }
 /* #endregion */
 
@@ -1097,6 +1101,11 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
     pointer-events: none;
     visibility: hidden;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media only screen and (min-width: 768px) {
+    .menu {
+        display: none;
+    }
 }
 
 .menu.is-open {
@@ -1160,7 +1169,6 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 /*.btn-close:hover .btn-close-icon,
 .btn-close:focus .btn-close-icon {
     fill: #FFFFFF;
@@ -1171,10 +1179,9 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
     flex-direction: column;
     gap: 40px;
     margin-bottom: 168px;
-
+    flex-grow: 1;
    
 }
-
 .menu-navigation-item {}
 
 .menu-navigation-link {
@@ -1184,7 +1191,6 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
-
 .menu-contacts {
     display: flex;
     flex-direction: column;
@@ -1192,7 +1198,6 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
     margin-bottom: 48px;
    
 }
-
 .menu-contacts-item {}
 
 .menu-contacts-link {
@@ -1203,12 +1208,10 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
     letter-spacing: 0.02em;
     color: #434455;
 }
-
 .menu-links {
     justify-content: space-between;
     gap: calc((100% - 40 * 3) / 3 );
 }
-
 .navigation-current{
     color: #404bbf;
 }
