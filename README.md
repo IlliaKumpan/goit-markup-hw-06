@@ -17,6 +17,9 @@
 768px - tablet
 1158px - desktop
 
+@media only screen and (min-width: 768px){}
+@media only screen and (min-width: 1158px){}
+
 FSon-124 Homework-6 by Illia Kumpan
 
     --iris: #4d5ae5;
@@ -44,8 +47,7 @@ font-optical-sizing: auto;
 font-weight: 400;
 font-style: normal;
 
-@media only screen and (min-width: 768px){}
-@media only screen and (min-width: 1158px){}
+
 
 git add .
 git commit -m hw-06
